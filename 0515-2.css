@@ -1,0 +1,523 @@
+/*container*/
+   body
+   {
+	   border: solid 1px;
+   }
+   .container
+   {
+	   max-width: 100%;
+	   background-color: #fff;
+   }
+   .container .top
+   {
+	   width: 100%;
+	   /* margin-bottom:10px; */
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: center;
+	   align-items: center;
+   }
+   .container .top .logo
+   {
+	   width: 200px;
+	   height: 200px;
+	   background-color: #aaa;
+	   margin:20px;
+   }
+   .list
+   {
+	   width: 100%;
+	   height: 100px;
+	   background-color: #EDB05E;
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: center;
+	   margin-bottom:20px;
+   }
+   .btn,.btn_1
+   {
+	   width: 10%;
+	   height: 80%;
+	   background-color: #EDB05E;
+	   margin: 10px;
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   align-items: center;
+	   justify-content: center;
+	   color: #fff;
+	   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+       transition-duration: 0.4s;
+       border-radius: 8px;
+   }
+   .btn:hover
+   {
+	   background-color: #F6C877;
+	   color: #875F83;
+	   font-weight: bold;
+   }
+
+/*下拉式*/	
+		ul li ul li a
+		{
+			text-decoration: none;
+			color: #875F83;
+			display: inline-block;
+		}
+		ul
+		{
+			display: inline;
+			margin: 0;
+			padding: 0;
+			left: 30%;
+		}
+		ul li{display: inline-block;}
+		ul li:hover
+		 {
+		 	background: #F6C877;
+		 	color: #875F83;
+	        font-weight: bold;
+		 }
+        ul li:hover ul 
+        {
+        	display: block;
+        }
+        ul li ul 
+        {
+            position: absolute;
+            display: none;
+        }
+        .btn_1:hover ul li ul{
+    	    display: block;
+    	    background-color: #E1EA72;
+	        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+            transition-duration: 0.5s;
+            border-radius: 8px;
+	        font-weight: bold;
+	        margin-top: 30px;
+        }
+        ul li ul li
+        {
+        	display: flex;
+        	flex-direction: column;
+	        margin: 10px;
+        }
+
+/*main*/
+    .main
+    {
+	    width: 100%;
+	    height: 80%;
+	    background-color: #F8EC80;
+	    display: flex;
+        flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    margin-bottom:20px;
+    }
+    .about
+    {
+	    width: 50%;
+	    height: 300px;
+	    background-color: #F8EC80;
+    }
+    .pic1
+    {
+	    width: 40%;
+	    height: 250px;
+	    background-color: #ddd;
+	    margin: 40px 5px 40px 0px;
+	    background-image: url(素材/9-1.png);
+	    background-position: cover top;
+        border-radius: 8px;
+    }
+    .intro
+    {
+	    width: 30%;
+	    height: 150px;
+	    /*background-color: #ddd;*/
+	    margin: 20px 0 20px 35%;
+    }
+    .intro h1
+    {
+	    text-align:center;
+	    padding-top: 40px;
+    }    
+    .intro_2
+    {
+	    width: 100%;
+	    height: 250px;
+	    background-color: #F9DCB6;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom:20px;
+    }
+    .btn2
+    {
+	    width: 15%;
+	    height: 70%;
+	    background-color: #ddd;
+	    border-radius: 50%;
+	    margin-bottom:20px;
+	    background-size: cover;
+	    background-position: center center;
+    }
+    .btn2.btn2_1
+    {
+	    background-image: url(素材/4.jpg);
+    }
+    .btn2.btn2_2
+    {
+	    background-image: url(素材/5.jpg);
+    }
+    .btn2.btn2_3
+    {
+	    background-image: url(素材/6.jpg);
+    }
+    .btn2.btn2_4
+    {
+	    background-image: url(素材/3.jpg);
+    }
+    .btn2.btn2_5
+    {
+	    background-image: url(素材/10.jpg);
+    }
+    .pro
+    {
+	    width: 80%;
+	    background-color: #fff;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: center;
+	    margin: auto;
+	    margin-bottom:20px;
+	    z-index: -1;
+    }
+    .pro_1
+    {
+	    width: 45%;
+	    height: 600px;
+	    background-color:#F8EC80; 
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: center;
+	    margin:10px;
+	    border-radius: 8px;
+    }
+    .up,.down
+    {
+	    display: flex;
+	    flex-direction: row;
+    }
+    .title
+    {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+    }
+    .title_1
+    {
+	    z-index: 1;
+    }
+    .pro .pic3
+    {
+	    width: 150px;
+	    height: 150px;
+	    border-radius: 50%;
+	    background-color: #bbb;
+	    position: absolute;
+	    z-index: 0;
+	    background-size: cover;
+
+    }
+    .pro .pic3.pic3-1
+    {
+	    background-image: url(素材/12-2.png);
+    }
+    .pro .pic3.pic3-2
+    {
+	    background-image: url(素材/6-2.png);
+    }
+    .pro .pic3.pic3-3
+    {
+	    background-image: url(素材/3-2.png);
+    }
+    .pro .pic3.pic3-4
+    {
+	    background-image: url(素材/10-1.png);
+    }
+    .item
+    {
+	    width: 20%;
+        height: 100px;
+        margin:10px;
+        z-index: 1;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content:center;
+	    font-weight: bold;
+    }
+    .up,.down
+    {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: center;
+    }
+    .itemL1
+    {
+	    display: flex;
+	    flex-direction: column;
+	    font-weight: bold;
+    }
+    .pro2
+    {
+	    width: 74%;
+	    background-color: #F8EC80;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: center;
+	    margin: auto;
+	    margin-bottom:20px;
+	    z-index: -1;
+    }
+    .pro_L,.pro_R
+    {
+	    width: 50%;
+	    height: 200px;
+	    background-color: #F8EC80;
+    }
+    .pro_R
+    {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: center;
+	    z-index: 0;
+    }
+    .pro_L
+    {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: center;
+    }
+    .pro_2
+    {
+	    z-index: 1;
+    }
+    .pic4
+    {
+	    width: 150px;
+	    height: 150px;
+	    border-radius: 50%;
+	    background-color: #bbb;
+	    position: absolute;
+	    z-index: 0;
+	    background-image: url(素材/4-1.png);
+	    background-size: cover;
+	    background-position: center center;
+    }
+    .item2
+    {
+	    width: 20%;
+        height: 100px;
+        margin:10px;
+        z-index: 1;
+        text-align: center;
+
+    }
+    .recommend
+    {
+	    width: 74%;
+	    background-color: #fff;
+	    margin: auto;
+	    padding-bottom: 80px;
+    }
+    .recommend_title
+    {
+	    width: 25%;
+	    height: 100px;
+	    margin-left:20px;
+    }
+    .recommend_text
+    {
+	    width: 100%;
+	    height: 400px;
+	    background-color: #fff;  
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+    }
+    .recommend_textL,.recommend_textR
+    {
+	    width: 45%;
+	    height: 100%;
+	    background-color: #fff;
+	    display:flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: center;
+    	align-items: center;
+    }
+    .recommend_textL
+    {
+    	margin:0px 10px 0px 40px;
+    }
+    .recommend_textLup,.recommend_textRup
+    {
+    	width: 80%;
+    	height: 60%;
+    	background-color: #ff0;
+    	margin: auto;
+    	background-size:cover;
+    	background-position: center center;
+        border-radius: 6px;
+    }
+    .recommend_textLup
+    {
+	    background-image: url(素材/11.jpg);
+    }
+    .recommend_textRup
+    {
+	    background-image: url(素材/10.jpg);
+    }
+    .recommend_textLdown,.recommend_textRdown
+    {
+	    width: 80%;
+	    height: 40%;
+	    background-color: #fff;
+	    margin: auto;
+    }
+    .source
+    {
+	    width: 74%;
+        /*background-color: #ddd;*/
+        border: solid 1px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .source_title
+    {
+	    width: 100%;
+    }
+    .source_text
+    {
+    	width: 100%;
+    	margin-left:20%; 
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap:wrap;
+	    font-size: 20pt;
+    }
+
+/*footer*/
+    .footer
+    {
+	    width: 74%;
+	    height: 10%;
+	    margin: auto;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    align-items: stretch;
+    }
+    .contact
+    {
+	    width: 35%;
+	    background-color: #EDB05D;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    align-items:space-between;
+	    text-indent: 20px;
+    }
+    .time
+    {
+	    width: 30%;
+	    background-color: #EDB05D;
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    align-items:center;
+    }
+        .map
+        {
+	        width: 35%;
+	        background-color: #EDB05D;
+	        padding-top: 3%;
+        }
+
+/*mobile*/
+    .navbarMobile
+    {
+	    background-color: #ECAE5E;
+	    height: 80px;
+	    position: relative;
+    }
+  /*collapse*/
+    .navbarMobile .collapse
+    {
+	    width: 50px;
+	    height: 50px;
+	    border: solid 1px;
+	    position: absolute;
+	    right: 20px;
+	    top:50%;
+	    transform: translateY(-50%);
+    }
+    .navbarMobile .collapse .line
+    {
+	    width: 40px;
+	    height: 5px;
+	    border: solid 1px;
+	    top:50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    position: absolute;
+    }
+    .navbarMobile .collapse .line:nth-child(1) {
+	    top: 25%;
+    }
+    .navbarMobile .collapse .line:nth-child(3) {
+	    top: 75%;
+    }
+    .navbarMobile ul
+    {
+	    background-color: #F6EBAF;
+	    position: relative;
+	    top:76px;
+	    z-index: 1;
+	    padding: 0;
+	    transition: all 0.3s ease-out;
+    }
+    .navbarMobile ul.active {
+	    height: 236px;
+    }
+    /*.navbarMobile ul li {
+	    list-style: none;
+	    padding: 20px 15px;
+    }*/
+    @media screen and (max-width: 768px)
+    {
+    
+    }
+    @media screen and (max-width: 576px)
+    {
+    
+    }
